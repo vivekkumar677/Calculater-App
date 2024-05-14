@@ -9,7 +9,7 @@ const Calculator = () => {
     
     if (value === '=') {
       try {
-        setResult(eval(input) || 'Error');
+        setResult(eval(input).toString());
       } catch (error) {
         setResult('Error');
       }
